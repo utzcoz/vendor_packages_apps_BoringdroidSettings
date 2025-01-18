@@ -34,15 +34,15 @@ spotless {
 
 android {
 	namespace "com.boringdroid.settings"
-	compileSdk 34
-	buildToolsVersion = "34.0.0"
+	compileSdk 35
+	buildToolsVersion = "35.0.0"
 
 	defaultConfig {
 		applicationId "com.boringdroid.settings"
 		minSdkVersion 28
-		targetSdkVersion 34
-		versionCode 130
-		versionName "130"
+		targetSdkVersion 35
+		versionCode 140
+		versionName "140"
 
 		testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 	}
