@@ -171,10 +171,7 @@ class BoringdroidFullscreenManageFragment : PreferenceFragmentCompat() {
             try {
                 val clazz = Class.forName("com.android.internal.BoringdroidManager")
                 val setMethod =
-                    clazz.getMethod(
-                        "getPackageOverlayWindowingMode",
-                        String::class.java,
-                    )
+                    clazz.getMethod("getPackageOverlayWindowingMode", String::class.java)
                 return setMethod.invoke(null, packageName) as Int
             } catch (e: ClassNotFoundException) {
                 Log.d(TAG, "Failed to get package windowing mode", e)
