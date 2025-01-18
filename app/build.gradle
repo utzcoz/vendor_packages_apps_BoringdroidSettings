@@ -68,7 +68,8 @@ android {
 	}
 
 	lintOptions {
-		abortOnError false
+		abortOnError true
+		baseline file("lint-baseilne.xml")
 	}
 
 	compileOptions {
