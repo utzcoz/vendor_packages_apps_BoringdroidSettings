@@ -24,6 +24,8 @@ jobs:
       uses: gradle/actions/setup-gradle@v4
     - name: Spotless Check
       run: ./gradlew spotlessCheck
+    - name: Lint check
+      run: ./gradlew lint
     - name: Build with Gradle
       run: ./gradlew build
     - name: Upload Release APK
